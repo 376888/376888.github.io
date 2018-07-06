@@ -1,44 +1,48 @@
 {
   "assetsByChunkName": {
     "path---start-excel-macro-from-power-shell": [
-      "path---start-excel-macro-from-power-shell-fbda55465025daf06479.js",
-      "path---start-excel-macro-from-power-shell-fbda55465025daf06479.js.map"
+      "path---start-excel-macro-from-power-shell-94ed7dde2bf0f8b8f46b.js",
+      "path---start-excel-macro-from-power-shell-94ed7dde2bf0f8b8f46b.js.map"
     ],
     "component---src-pages-index-js": [
       "component---src-pages-index-js-aa9570313651ef926b5a.js",
       "component---src-pages-index-js-aa9570313651ef926b5a.js.map"
     ],
     "path---get-started-with-powershell": [
-      "path---get-started-with-powershell-fa139eebe3e6f96d7277.js",
-      "path---get-started-with-powershell-fa139eebe3e6f96d7277.js.map"
+      "path---get-started-with-powershell-f59ef5fa2e82c3033df5.js",
+      "path---get-started-with-powershell-f59ef5fa2e82c3033df5.js.map"
     ],
     "path---": [
-      "path----364b37f5eb3cbea5f832.js",
-      "path----364b37f5eb3cbea5f832.js.map"
+      "path----a7240d5f07b5da058461.js",
+      "path----a7240d5f07b5da058461.js.map"
     ],
     "path---problem-solving-java-scripts-reduce-function": [
-      "path---problem-solving-java-scripts-reduce-function-4f587a27ada1f9c2826e.js",
-      "path---problem-solving-java-scripts-reduce-function-4f587a27ada1f9c2826e.js.map"
+      "path---problem-solving-java-scripts-reduce-function-3b60c1aad3b82dc0c82d.js",
+      "path---problem-solving-java-scripts-reduce-function-3b60c1aad3b82dc0c82d.js.map"
     ],
     "component---src-pages-contact-js": [
       "component---src-pages-contact-js-08bbc7f8059f537682fa.js",
       "component---src-pages-contact-js-08bbc7f8059f537682fa.js.map"
+    ],
+    "path---tools": [
+      "path---tools-e4738cdda60f4d8eb878.js",
+      "path---tools-e4738cdda60f4d8eb878.js.map"
     ],
     "component---node-modules-gatsby-plugin-offline-app-shell-js": [
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-99e82fd19d89923ba280.js",
-      "component---src-layouts-index-js-99e82fd19d89923ba280.js.map"
+      "component---src-layouts-index-js-1c539cbc7f315d28c49f.js",
+      "component---src-layouts-index-js-1c539cbc7f315d28c49f.js.map"
     ],
     "path---javascript-google-sheets-custom-function": [
-      "path---javascript-google-sheets-custom-function-8247460008da043d901c.js",
-      "path---javascript-google-sheets-custom-function-8247460008da043d901c.js.map"
+      "path---javascript-google-sheets-custom-function-1735b8b5deabfc5a6b7b.js",
+      "path---javascript-google-sheets-custom-function-1735b8b5deabfc5a6b7b.js.map"
     ],
     "path---custom-windows-search-files-powershell": [
-      "path---custom-windows-search-files-powershell-9528a8fd883adc750ba2.js",
-      "path---custom-windows-search-files-powershell-9528a8fd883adc750ba2.js.map"
+      "path---custom-windows-search-files-powershell-070135d7bf09f24936fc.js",
+      "path---custom-windows-search-files-powershell-070135d7bf09f24936fc.js.map"
     ],
     "path---index": [
       "path---index-1316629f2faca1dc06d8.js",
@@ -55,12 +59,12 @@
       "build-js-styles.css.map"
     ],
     "path---success": [
-      "path---success-2fa54edba2dbfae08f69.js",
-      "path---success-2fa54edba2dbfae08f69.js.map"
+      "path---success-4cdf971419e082310365.js",
+      "path---success-4cdf971419e082310365.js.map"
     ],
     "path---javascript-learning": [
-      "path---javascript-learning-6006fc6f16c6a9b6994b.js",
-      "path---javascript-learning-6006fc6f16c6a9b6994b.js.map"
+      "path---javascript-learning-4d6496d587668da21a88.js",
+      "path---javascript-learning-4d6496d587668da21a88.js.map"
     ],
     "path---contact": [
       "path---contact-a0e39f21c11f6a62c5ab.js",
@@ -75,13 +79,13 @@
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---starters": [
-      "path---starters-488a1b70c584880ca189.js",
-      "path---starters-488a1b70c584880ca189.js.map"
+      "path---starters-0981a61ec7a0cc4d1e44.js",
+      "path---starters-0981a61ec7a0cc4d1e44.js.map"
     ],
     "app": [
-      "app-8325c2188ca0a496c9f8.js",
+      "app-a45ca23ebc3399355528.js",
       "build-js-styles.css",
-      "app-8325c2188ca0a496c9f8.js.map",
+      "app-a45ca23ebc3399355528.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-templates-page-template-js": [
@@ -93,12 +97,12 @@
       "path---search-3e96f938fb399b1f332f.js.map"
     ],
     "path---about": [
-      "path---about-19d899e4434c70dc07a8.js",
-      "path---about-19d899e4434c70dc07a8.js.map"
+      "path---about-699ae2c48356e89a4640.js",
+      "path---about-699ae2c48356e89a4640.js.map"
     ],
     "path---get-started-with-powershell-part-2": [
-      "path---get-started-with-powershell-part-2-868a47b124865af16dcb.js",
-      "path---get-started-with-powershell-part-2-868a47b124865af16dcb.js.map"
+      "path---get-started-with-powershell-part-2-383e2bdbc0d924640f81.js",
+      "path---get-started-with-powershell-part-2-383e2bdbc0d924640f81.js.map"
     ]
   }
 }
