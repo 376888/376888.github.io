@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Domain of Azrael]]></title><description><![CDATA[Blog about C#, javascript and powershell]]></description><link>http://paulbcastillo.me</link><generator>RSS for Node</generator><lastBuildDate>Sat, 07 Jul 2018 01:15:59 GMT</lastBuildDate><item><title><![CDATA[Problem solving JavaScript's Reduce function - just one of many use cases to utilize Reduce]]></title><description><![CDATA[Problem: Use one array and  .reduce() function . Rules:  Data Solution How did I arrive at this solution?! I will elaborate below. So I used…]]></description><link>http://paulbcastillo.me/Problem-solving-JavaScripts-Reduce-function/</link><guid isPermaLink="false">http://paulbcastillo.me/Problem-solving-JavaScripts-Reduce-function/</guid><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Domain of Azrael]]></title><description><![CDATA[Blog about C#, javascript and powershell]]></description><link>http://paulbcastillo.me</link><generator>RSS for Node</generator><lastBuildDate>Sat, 07 Jul 2018 14:23:40 GMT</lastBuildDate><item><title><![CDATA[Problem solving JavaScript's Reduce function - just one of many use cases to utilize Reduce]]></title><description><![CDATA[Problem: Use one array and  .reduce() function . Rules:  Return an object where each property is the name of the an ice cream flavor and…]]></description><link>http://paulbcastillo.me/Problem-solving-JavaScripts-Reduce-function/</link><guid isPermaLink="false">http://paulbcastillo.me/Problem-solving-JavaScripts-Reduce-function/</guid><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/abstract-art-artistic-1020315-87727d5e4b6e36480d453f4956a55677-9acb9.jpg&quot;
@@ -37,10 +37,10 @@
     &lt;/p&gt;
 &lt;p&gt;Problem: Use one array and &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce&quot;&gt;.reduce() function&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Rules: &lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
-      &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;* Return an object where each property is the name of the an ice cream flavor and each value is an integer that is the total count of that flavor.
-* Store the returned data in a new iceCreamTotals variable.&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Return an object where each property is the name of the an ice cream flavor and each value is an integer that is the total count of that flavor.&lt;/li&gt;
+&lt;li&gt;Store the returned data in a new iceCreamTotals variable.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3&gt;Data&lt;/h3&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;
       &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; data &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
@@ -186,7 +186,9 @@ superhero&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;favoriteI
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Go to Tools -&gt; Script Editor&lt;/p&gt;
-&lt;p&gt;      
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/scriptEditor-e38d52be06a50410d88f0b8eb9c2f5c0-4550a.png&quot;
@@ -219,8 +221,8 @@ superhero&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;favoriteI
   
   &lt;/a&gt;
     &lt;/p&gt;
-&lt;p&gt;       Script Editor Window&lt;/p&gt;
-&lt;p&gt;       
+&lt;p&gt;Script Editor Window&lt;/p&gt;
+&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/defaultCodeWindow-7ccc4acb03880c738b2c4823e63c3e00-3cdb2.png&quot;
@@ -253,8 +255,8 @@ superhero&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;favoriteI
   
   &lt;/a&gt;
     &lt;/p&gt;
-&lt;p&gt;       Code window with the custom function.&lt;/p&gt;
-&lt;p&gt;       
+&lt;p&gt;Code window with the custom function.&lt;/p&gt;
+&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/codeFunction-5d144dae46e937108f2716a65b00eedd-086d8.png&quot;
@@ -287,12 +289,14 @@ superhero&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;favoriteI
   
   &lt;/a&gt;
     &lt;/p&gt;
-&lt;/li&gt;
+&lt;ol start=&quot;3&quot;&gt;
 &lt;li&gt;
 &lt;p&gt;Run the script.&lt;/p&gt;
 &lt;p&gt;To run the script in the window you would normally click the play button it would work but since this is a Custom Function it should be called from the sheet cells. The other way to test the function is to create another function and call this function with the parameters.&lt;/p&gt;
 &lt;p&gt;But since we haven’t run anything at all we have to run the script and we will prompted to name the project. So click the play button and this window will come up. When it does just name the project whatever you like.&lt;/p&gt;
-&lt;p&gt;      
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/EditProjName-533fece22ed8c569cba08333da768acc-28b0e.png&quot;
@@ -325,13 +329,15 @@ superhero&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;favoriteI
   
   &lt;/a&gt;
     &lt;/p&gt;
-&lt;/li&gt;
+&lt;ol start=&quot;4&quot;&gt;
 &lt;li&gt;
 &lt;p&gt;Autocompletion&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;If you commented your function correctly and the right syntax then you should see this.
-      
+&lt;li&gt;If you commented your function correctly and the right syntax then you should see this.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/combineStringsAutocompletion-77e3963dd0bf49c7225d171824394a46-3fad5.png&quot;
@@ -363,13 +369,12 @@ superhero&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;favoriteI
   &lt;/span&gt;
   
   &lt;/a&gt;
-    &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Here is the sheet with the two strings and the function working in the sheet.&lt;/p&gt;
-&lt;/li&gt;
+    
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Here is the sheet with the two strings and the function working in the sheet.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;      
+&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/example-0b6b2f2dcb95010f45ad23ad16a45b66-851ae.png&quot;
@@ -402,10 +407,8 @@ superhero&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;favoriteI
   
   &lt;/a&gt;
     &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Inputs - Arrays&lt;/p&gt;
-&lt;/li&gt;
+&lt;ol start=&quot;5&quot;&gt;
+&lt;li&gt;Inputs - Arrays&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;According this this google example you can also accept and array of objects or cells.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;powershell&quot;&gt;
@@ -481,7 +484,7 @@ superhero&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;favoriteI
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;I use &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions&quot; target=&quot;_blank&quot;&gt;Regular Expressions&lt;/a&gt; to find all the links in the document on this line: &lt;code class=&quot;language-text&quot;&gt;var linkUrls = content.match(/href=&amp;quot;(.*?)&amp;quot;/g).toString();&lt;/code&gt; and then I use the  &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split&quot; target=&quot;_blank&quot;&gt;array function split()&lt;/a&gt; to separate every text between commas into and array called arrayLinks. Then I return the array and all the links populate one row at a time on the sheet.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;* Tip: I use &amp;#x3C;a href=”&lt;a href=&quot;http://regexr.com/&quot;&gt;http://regexr.com/&lt;/a&gt;” target=”&lt;/em&gt;blank”&gt;RegExr.com&lt;/a&gt; to help create my Regular expressions because its a quick resource to help test out different regular expressions._&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;* Tip: I use&lt;/em&gt; &lt;a href=&quot;http://regexr.com/&quot; target=&quot;_blank&quot;&gt;&lt;em&gt;RegExr.com&lt;/em&gt;&lt;/a&gt; &lt;em&gt;to help create my Regular expressions because its a quick resource to help test out different regular expressions.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;To test the function I created, I create two more functions. One called test() and the other called LogLink();&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;powershell&quot;&gt;
       &lt;pre class=&quot;language-powershell&quot;&gt;&lt;code class=&quot;language-powershell&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; LogLink&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;input&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
