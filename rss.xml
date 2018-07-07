@@ -1,4 +1,41 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Domain of Azrael]]></title><description><![CDATA[Blog about C#, javascript and powershell]]></description><link>http://paulbcastillo.me</link><generator>RSS for Node</generator><lastBuildDate>Fri, 06 Jul 2018 21:52:17 GMT</lastBuildDate><item><title><![CDATA[Problem solving JavaScript's Reduce function - just one of many use cases to utilize Reduce]]></title><description><![CDATA[Problem: Use one array and  .reduce() function . Rules:  Data Solution How did I arrive at this solution?! I will elaborate below. So I used…]]></description><link>http://paulbcastillo.me/Problem-solving-JavaScripts-Reduce-function/</link><guid isPermaLink="false">http://paulbcastillo.me/Problem-solving-JavaScripts-Reduce-function/</guid><content:encoded>&lt;p&gt;Problem: Use one array and &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce&quot;&gt;.reduce() function&lt;/a&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Domain of Azrael]]></title><description><![CDATA[Blog about C#, javascript and powershell]]></description><link>http://paulbcastillo.me</link><generator>RSS for Node</generator><lastBuildDate>Sat, 07 Jul 2018 00:19:13 GMT</lastBuildDate><item><title><![CDATA[Problem solving JavaScript's Reduce function - just one of many use cases to utilize Reduce]]></title><description><![CDATA[Problem: Use one array and  .reduce() function . Rules:  Data Solution How did I arrive at this solution?! I will elaborate below. So I used…]]></description><link>http://paulbcastillo.me/Problem-solving-JavaScripts-Reduce-function/</link><guid isPermaLink="false">http://paulbcastillo.me/Problem-solving-JavaScripts-Reduce-function/</guid><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/abstract-art-artistic-1020315-87727d5e4b6e36480d453f4956a55677-9acb9.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 69.60000000000001%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAOABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFA//EABYBAQEBAAAAAAAAAAAAAAAAAAMAAv/aAAwDAQACEAMQAAABmM5OJRiyZH//xAAcEAACAgIDAAAAAAAAAAAAAAABAgADBBESITH/2gAIAQEAAQUCqU8n7Qw+01iNjpv/xAAYEQEAAwEAAAAAAAAAAAAAAAABAAITIf/aAAgBAwEBPwG6V6TUn//EABgRAAMBAQAAAAAAAAAAAAAAAAABEQIS/9oACAECAQE/AcqqM5P/xAAaEAACAgMAAAAAAAAAAAAAAAAAEAEhERJh/9oACAEBAAY/Aro7C1Mr/8QAGRABAAMBAQAAAAAAAAAAAAAAAQARIVEx/9oACAEBAAE/IcReb0jEMgm9iR2yNtcqdSf/2gAMAwEAAgADAAAAEIcf/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAFBYf/aAAgBAwEBPxBaqmJ//8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQIBAT8Qsm3/xAAbEAEAAwEAAwAAAAAAAAAAAAABABExIVFhcf/aAAgBAQABPxADunYRgHFk1vlJa1LIFG5t4vOysFqh6vZd5+M//9k=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;unsplash.com&quot;
+        title=&quot;&quot;
+        src=&quot;/static/abstract-art-artistic-1020315-87727d5e4b6e36480d453f4956a55677-78f2b.jpg&quot;
+        srcset=&quot;/static/abstract-art-artistic-1020315-87727d5e4b6e36480d453f4956a55677-dce19.jpg 200w,
+/static/abstract-art-artistic-1020315-87727d5e4b6e36480d453f4956a55677-c1413.jpg 400w,
+/static/abstract-art-artistic-1020315-87727d5e4b6e36480d453f4956a55677-78f2b.jpg 800w,
+/static/abstract-art-artistic-1020315-87727d5e4b6e36480d453f4956a55677-ab4c4.jpg 1200w,
+/static/abstract-art-artistic-1020315-87727d5e4b6e36480d453f4956a55677-bc99b.jpg 1600w,
+/static/abstract-art-artistic-1020315-87727d5e4b6e36480d453f4956a55677-34a60.jpg 2400w,
+/static/abstract-art-artistic-1020315-87727d5e4b6e36480d453f4956a55677-9acb9.jpg 2500w&quot;
+        sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Problem: Use one array and &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce&quot;&gt;.reduce() function&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Rules: &lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
       &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;* Return an object where each property is the name of the an ice cream flavor and each value is an integer that is the total count of that flavor.
@@ -77,7 +114,43 @@ superhero&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;favoriteI
 &lt;li&gt;&lt;a href=&quot;http://wesbos.com/es6-for-everyone/&quot;&gt;ES6 for everyone!&lt;/a&gt; from Wes Bos.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://hackernoon.com/understanding-map-filter-and-reduce-in-javascript-5df1c7eee464&quot;&gt;Understanding map, filter and reduce in Javascript&lt;/a&gt; on HackerNoon.com.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://developers.google.com/web/tools/chrome-devtools/javascript/&quot;&gt;Get Started with Debugging JavaScript in Chrome DevTools&lt;/a&gt; for debugging in Chrome.&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[How to create your own Google Sheets Custom Function]]></title><description><![CDATA[How to create a custom Function in Google Sheets Why would you create a custom Function in Google Sheets?! When you create a custom function…]]></description><link>http://paulbcastillo.me/Javascript-GoogleSheets-CustomFunction/</link><guid isPermaLink="false">http://paulbcastillo.me/Javascript-GoogleSheets-CustomFunction/</guid><content:encoded>&lt;h2&gt;How to create a custom Function in Google Sheets&lt;/h2&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[How to create your own Google Sheets Custom Function]]></title><description><![CDATA[Why would you create a custom Function in Google Sheets?! When you create a custom function you have full control over the input and output…]]></description><link>http://paulbcastillo.me/Javascript-GoogleSheets-CustomFunction/</link><guid isPermaLink="false">http://paulbcastillo.me/Javascript-GoogleSheets-CustomFunction/</guid><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/abstract-blue-concrete-34090-b5758ea17a72f77a586ef2fb41775500-0c070.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 66.66666666666666%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAMCBAX/xAAVAQEBAAAAAAAAAAAAAAAAAAACBP/aAAwDAQACEAMQAAABYrOZRNMrhX//xAAbEAABBAMAAAAAAAAAAAAAAAACAAEDEQQQIf/aAAgBAQABBQKM6EpuPkEmetWv/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFhEBAQEAAAAAAAAAAAAAAAAAAAER/9oACAECAQE/AW1//8QAGRABAAIDAAAAAAAAAAAAAAAAAQARIDIz/9oACAEBAAY/Ato0LOeH/8QAGhABAAMBAQEAAAAAAAAAAAAAAQARIUGBkf/aAAgBAQABPyEKmGLg5fYl0eRfiW5sVc//2gAMAwEAAgADAAAAEMzv/8QAGBEBAQEBAQAAAAAAAAAAAAAAAREAMaH/2gAIAQMBAT8QqAQ90Hpv/8QAGBEAAwEBAAAAAAAAAAAAAAAAAAERIUH/2gAIAQIBAT8QbukOn//EABsQAQACAwEBAAAAAAAAAAAAAAEAETFBYSGR/9oACAEBAAE/EBqA5mJAJoj6Z5ToVqTDL1F7bERaf//Z&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;unsplash.com&quot;
+        title=&quot;&quot;
+        src=&quot;/static/abstract-blue-concrete-34090-b5758ea17a72f77a586ef2fb41775500-78f2b.jpg&quot;
+        srcset=&quot;/static/abstract-blue-concrete-34090-b5758ea17a72f77a586ef2fb41775500-dce19.jpg 200w,
+/static/abstract-blue-concrete-34090-b5758ea17a72f77a586ef2fb41775500-c1413.jpg 400w,
+/static/abstract-blue-concrete-34090-b5758ea17a72f77a586ef2fb41775500-78f2b.jpg 800w,
+/static/abstract-blue-concrete-34090-b5758ea17a72f77a586ef2fb41775500-ab4c4.jpg 1200w,
+/static/abstract-blue-concrete-34090-b5758ea17a72f77a586ef2fb41775500-bc99b.jpg 1600w,
+/static/abstract-blue-concrete-34090-b5758ea17a72f77a586ef2fb41775500-34a60.jpg 2400w,
+/static/abstract-blue-concrete-34090-b5758ea17a72f77a586ef2fb41775500-0c070.jpg 5472w&quot;
+        sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;em&gt;Why would you create a custom Function in Google Sheets?!&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -850,7 +923,43 @@ superhero&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;favoriteI
     &lt;/div&gt;
 &lt;/div&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[How I learn JavaScript]]></title><description><![CDATA[How I am learning  JavaScript; Lately I have been trying to learn all I can about JavaScript. Coming from a background of .Net it was a…]]></description><link>http://paulbcastillo.me/Javascript-Learning/</link><guid isPermaLink="false">http://paulbcastillo.me/Javascript-Learning/</guid><content:encoded>&lt;h1&gt;How I am learning &lt;a href=&quot;https://en.wikipedia.org/wiki/JavaScript&quot; target=&quot;_blank&quot;&gt;JavaScript;&lt;/a&gt;&lt;/h1&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[How I learn JavaScript]]></title><description><![CDATA[How I am learning  JavaScript; Lately I have been trying to learn all I can about JavaScript. Coming from a background of .Net it was a…]]></description><link>http://paulbcastillo.me/Javascript-Learning/</link><guid isPermaLink="false">http://paulbcastillo.me/Javascript-Learning/</guid><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/abstract-background-canvas-249798-7aa982237ae49224bace4c0b3b613b49-eb5b3.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 67.70921386306001%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAOABQDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAT/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAABgEoH/8QAFBABAAAAAAAAAAAAAAAAAAAAIP/aAAgBAQABBQJf/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAIP/aAAgBAQAGPwJf/8QAFxABAAMAAAAAAAAAAAAAAAAAEAARgf/aAAgBAQABPyExuf/aAAwDAQACAAMAAAAQQw//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAaEAEAAwADAAAAAAAAAAAAAAABABFBIVFh/9oACAEBAAE/EKVhfUA2zLDJr5zKGXP/2Q==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;unsplash.com&quot;
+        title=&quot;&quot;
+        src=&quot;/static/abstract-background-canvas-249798-7aa982237ae49224bace4c0b3b613b49-78f2b.jpg&quot;
+        srcset=&quot;/static/abstract-background-canvas-249798-7aa982237ae49224bace4c0b3b613b49-dce19.jpg 200w,
+/static/abstract-background-canvas-249798-7aa982237ae49224bace4c0b3b613b49-c1413.jpg 400w,
+/static/abstract-background-canvas-249798-7aa982237ae49224bace4c0b3b613b49-78f2b.jpg 800w,
+/static/abstract-background-canvas-249798-7aa982237ae49224bace4c0b3b613b49-ab4c4.jpg 1200w,
+/static/abstract-background-canvas-249798-7aa982237ae49224bace4c0b3b613b49-bc99b.jpg 1600w,
+/static/abstract-background-canvas-249798-7aa982237ae49224bace4c0b3b613b49-eb5b3.jpg 2366w&quot;
+        sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;h1&gt;How I am learning &lt;a href=&quot;https://en.wikipedia.org/wiki/JavaScript&quot; target=&quot;_blank&quot;&gt;JavaScript;&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;Lately I have been trying to learn all I can about JavaScript. Coming from a background of .Net it was a little troublesome at first because lets face it JavaScript was a pain when I started learning it and it was a chore at best. Within the past year I have begun embracing it and all its odd complexities. Now I am just fascinated with its flexibility and popularity. Here are some of the ways I am learning it.&lt;/p&gt;
 &lt;h2&gt;Learning by solving real-world problems;&lt;/h2&gt;
 &lt;p&gt;I was trying to decide how I can get some real-world &lt;a href=&quot;https://en.wikipedia.org/wiki/JavaScript&quot; target=&quot;_blank&quot;&gt;JavaScript&lt;/a&gt; code out there when I came across &lt;a href=&quot;https://www.fiverr.com/&quot; target=&quot;_blank&quot;&gt;Fiverr.com&lt;/a&gt;. I want to eventually create a side business and this was my first real attempt to “get out there” and do some work. So I decided to go full in on Fiverr and I did for a few months then I had to stop using it because of personal reasons. I learned so much by working on small tasks in Google apps like Google Sheets, which uses JavaScript as its scripting language.&lt;/p&gt;
@@ -896,7 +1005,44 @@ superhero&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;favoriteI
 &lt;li&gt;&lt;a href=&quot;https://blogs.technet.microsoft.com/heyscriptingguy/2006/09/08/how-can-i-use-windows-powershell-to-automate-microsoft-excel/&quot; target=&quot;_blank&quot;&gt;Scripting guy&lt;/a&gt; &lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://ramblingcookiemonster.github.io/PSExcel-Intro/&quot; target=&quot;_blank&quot;&gt;Rambling Cookie Monster&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://posh2scripting.wordpress.com/2013/07/31/automating-excel-spreadsheets-with-powershell/&quot; target=&quot;_blank&quot;&gt;Posh2Scripting&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Custom Windows File and Pattern Search in PowerShell script]]></title><description><![CDATA[Custom Windows Search I recently worked on a project where I was tasked to create a custom search for a client and he wanted a specific…]]></description><link>http://paulbcastillo.me/Custom-Windows-Search-Files-Powershell/</link><guid isPermaLink="false">http://paulbcastillo.me/Custom-Windows-Search-Files-Powershell/</guid><content:encoded>&lt;h2&gt;Custom Windows Search&lt;/h2&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Custom Windows File and Pattern Search in PowerShell script]]></title><description><![CDATA[Custom Windows Search I recently worked on a project where I was tasked to create a custom search for a client and he wanted a specific…]]></description><link>http://paulbcastillo.me/Custom-Windows-Search-Files-Powershell/</link><guid isPermaLink="false">http://paulbcastillo.me/Custom-Windows-Search-Files-Powershell/</guid><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/arrows-blur-close-up-163130-0269c4f1a6717e5319a3b4d3b7f2ed61-e061c.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 34.14043583535109%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAHABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAIF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAABypCQf//EABQQAQAAAAAAAAAAAAAAAAAAABD/2gAIAQEAAQUCf//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABQQAQAAAAAAAAAAAAAAAAAAABD/2gAIAQEABj8Cf//EABYQAQEBAAAAAAAAAAAAAAAAAAEAEP/aAAgBAQABPyFJz//aAAwDAQACAAMAAAAQgA//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAZEAADAAMAAAAAAAAAAAAAAAAAARExUZH/2gAIAQEAAT8QgJcDu+o//9k=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;unsplash.com&quot;
+        title=&quot;&quot;
+        src=&quot;/static/arrows-blur-close-up-163130-0269c4f1a6717e5319a3b4d3b7f2ed61-78f2b.jpg&quot;
+        srcset=&quot;/static/arrows-blur-close-up-163130-0269c4f1a6717e5319a3b4d3b7f2ed61-dce19.jpg 200w,
+/static/arrows-blur-close-up-163130-0269c4f1a6717e5319a3b4d3b7f2ed61-c1413.jpg 400w,
+/static/arrows-blur-close-up-163130-0269c4f1a6717e5319a3b4d3b7f2ed61-78f2b.jpg 800w,
+/static/arrows-blur-close-up-163130-0269c4f1a6717e5319a3b4d3b7f2ed61-ab4c4.jpg 1200w,
+/static/arrows-blur-close-up-163130-0269c4f1a6717e5319a3b4d3b7f2ed61-bc99b.jpg 1600w,
+/static/arrows-blur-close-up-163130-0269c4f1a6717e5319a3b4d3b7f2ed61-34a60.jpg 2400w,
+/static/arrows-blur-close-up-163130-0269c4f1a6717e5319a3b4d3b7f2ed61-e061c.jpg 4543w&quot;
+        sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;h2&gt;Custom Windows Search&lt;/h2&gt;
 &lt;p&gt;I recently worked on a project where I was tasked to create a custom search for a client and he wanted a specific search that would
 look at 1 text file filled with windows path locations and 1 text file that has specific words to search for.&lt;/p&gt;
 &lt;p&gt;Here is the script:
@@ -1385,7 +1531,44 @@ C:\Test\level1\Level2\Level3 excerpteThirteen.jpg 0 MB 12/16/2016 11:47:11 AM Ow
 **Number of Files found: 0&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
       &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;</content:encoded></item><item><title><![CDATA[Beginner's guide to PowerShell part 2 - Functions]]></title><description><![CDATA[Functions If you find that you are running a certain script all the time then the best thing to do is to create it as a function. But there…]]></description><link>http://paulbcastillo.me/get-started-with-Powershell-part2/</link><guid isPermaLink="false">http://paulbcastillo.me/get-started-with-Powershell-part2/</guid><content:encoded>&lt;h2&gt;Functions&lt;/h2&gt;
+      &lt;/div&gt;</content:encoded></item><item><title><![CDATA[Beginner's guide to PowerShell part 2 - Functions]]></title><description><![CDATA[Functions If you find that you are running a certain script all the time then the best thing to do is to create it as a function. But there…]]></description><link>http://paulbcastillo.me/get-started-with-Powershell-part2/</link><guid isPermaLink="false">http://paulbcastillo.me/get-started-with-Powershell-part2/</guid><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/abstract-curves-led-1944-205ba00cdb395f171c66fb0d2f8ddb5f-05c25.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 38.967052537845056%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAIABQDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAX/xAAWAQEBAQAAAAAAAAAAAAAAAAACAQT/2gAMAwEAAhADEAAAAZg00Cv/xAAVEAEBAAAAAAAAAAAAAAAAAAAQEf/aAAgBAQABBQKv/8QAGBEAAgMAAAAAAAAAAAAAAAAAAAECEhP/2gAIAQMBAT8B0kXZ/8QAFhEBAQEAAAAAAAAAAAAAAAAAABIB/9oACAECAQE/AYxL/8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQAGPwJ//8QAGhAAAgIDAAAAAAAAAAAAAAAAAREAEDFBkf/aAAgBAQABPyF1gcjJGq//2gAMAwEAAgADAAAAEPv/AP/EABYRAQEBAAAAAAAAAAAAAAAAAAEAQf/aAAgBAwEBPxA2Yv8A/8QAFhEBAQEAAAAAAAAAAAAAAAAAAQAx/9oACAECAQE/EIQOt//EABoQAQACAwEAAAAAAAAAAAAAAAEAESExQVH/2gAIAQEAAT8QpHQ3UhSPXhLTGJ//2Q==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;unsplash.com&quot;
+        title=&quot;&quot;
+        src=&quot;/static/abstract-curves-led-1944-205ba00cdb395f171c66fb0d2f8ddb5f-78f2b.jpg&quot;
+        srcset=&quot;/static/abstract-curves-led-1944-205ba00cdb395f171c66fb0d2f8ddb5f-dce19.jpg 200w,
+/static/abstract-curves-led-1944-205ba00cdb395f171c66fb0d2f8ddb5f-c1413.jpg 400w,
+/static/abstract-curves-led-1944-205ba00cdb395f171c66fb0d2f8ddb5f-78f2b.jpg 800w,
+/static/abstract-curves-led-1944-205ba00cdb395f171c66fb0d2f8ddb5f-ab4c4.jpg 1200w,
+/static/abstract-curves-led-1944-205ba00cdb395f171c66fb0d2f8ddb5f-bc99b.jpg 1600w,
+/static/abstract-curves-led-1944-205ba00cdb395f171c66fb0d2f8ddb5f-34a60.jpg 2400w,
+/static/abstract-curves-led-1944-205ba00cdb395f171c66fb0d2f8ddb5f-05c25.jpg 5615w&quot;
+        sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;h2&gt;Functions&lt;/h2&gt;
 &lt;p&gt;If you find that you are running a certain script all the time then the best thing to do is to create it as a function. But there are also other benefits to using functions.
 When you create a function, the name you have for the function is now a command inside your PowerShell session.&lt;/p&gt;
 &lt;p&gt;Now I prefer using &lt;a href=&quot;https://msdn.microsoft.com/en-us/powershell/scripting/getting-started/fundamental/windows-powershell-integrated-scripting-environment--ise-&quot;&gt;PowerShell ISE&lt;/a&gt; when creating script because of its ease of use.&lt;/p&gt;
@@ -1591,7 +1774,44 @@ secondNumber: 2
       &lt;/div&gt;
 &lt;p&gt;This is just a high level view of functions and we will get into PowerShell profile next.&lt;/p&gt;
 &lt;h2&gt;PowerShell links&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;http://ss64.com/ps/&quot;&gt;PowerShell references&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Beginner's guide to PowerShell]]></title><description><![CDATA[If you repeat it, PowerShell it. I like making my everyday job easier so scripting repeat things I do every day is key for me. I found that…]]></description><link>http://paulbcastillo.me/get-started-with-Powershell/</link><guid isPermaLink="false">http://paulbcastillo.me/get-started-with-Powershell/</guid><content:encoded>&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;http://ss64.com/ps/&quot;&gt;PowerShell references&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Beginner's guide to PowerShell]]></title><description><![CDATA[If you repeat it, PowerShell it. I like making my everyday job easier so scripting repeat things I do every day is key for me. I found that…]]></description><link>http://paulbcastillo.me/get-started-with-Powershell/</link><guid isPermaLink="false">http://paulbcastillo.me/get-started-with-Powershell/</guid><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/close-up-computer-keyboard-18547-254a27900f773dbb2acfabc38b214ebf-39cad.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 66.66666666666666%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAUCAwT/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//aAAwDAQACEAMQAAABlqTPkKBSRX//xAAbEAACAgMBAAAAAAAAAAAAAAABAxESAAIEIv/aAAgBAQABBQJFYG1CW4p/oRVnSb//xAAXEQADAQAAAAAAAAAAAAAAAAAAAREh/9oACAEDAQE/AVhWf//EABcRAQEBAQAAAAAAAAAAAAAAAAIAARP/2gAIAQIBAT8BZx3E3//EABoQAAIDAQEAAAAAAAAAAAAAAAABAhExECH/2gAIAQEABj8CqeFL2PKcEYOon//EABsQAQACAgMAAAAAAAAAAAAAAAEAETFhUXGh/9oACAEBAAE/IXb1FiKvE1BvHkJCWxmQSMgo3P/aAAwDAQACAAMAAAAQix//xAAXEQEAAwAAAAAAAAAAAAAAAAAAESFh/9oACAEDAQE/EJVZP//EABcRAAMBAAAAAAAAAAAAAAAAAAABIWH/2gAIAQIBAT8Qss2Z/8QAGxABAAICAwAAAAAAAAAAAAAAAQARIVFhscH/2gAIAQEAAT8QeAK0KhQWLBKcQj9ouIdDsZWQFl5bhraVlM//2Q==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;unsplash.com&quot;
+        title=&quot;&quot;
+        src=&quot;/static/close-up-computer-keyboard-18547-254a27900f773dbb2acfabc38b214ebf-78f2b.jpg&quot;
+        srcset=&quot;/static/close-up-computer-keyboard-18547-254a27900f773dbb2acfabc38b214ebf-dce19.jpg 200w,
+/static/close-up-computer-keyboard-18547-254a27900f773dbb2acfabc38b214ebf-c1413.jpg 400w,
+/static/close-up-computer-keyboard-18547-254a27900f773dbb2acfabc38b214ebf-78f2b.jpg 800w,
+/static/close-up-computer-keyboard-18547-254a27900f773dbb2acfabc38b214ebf-ab4c4.jpg 1200w,
+/static/close-up-computer-keyboard-18547-254a27900f773dbb2acfabc38b214ebf-bc99b.jpg 1600w,
+/static/close-up-computer-keyboard-18547-254a27900f773dbb2acfabc38b214ebf-34a60.jpg 2400w,
+/static/close-up-computer-keyboard-18547-254a27900f773dbb2acfabc38b214ebf-39cad.jpg 5184w&quot;
+        sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;blockquote&gt;
 &lt;p&gt;If you repeat it, PowerShell it.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;I like making my everyday job easier so scripting repeat things I do every day is key for me. I found that if I am typing something more than once a day I might as well create a script to automate this process.
