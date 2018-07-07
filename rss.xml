@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Domain of Azrael]]></title><description><![CDATA[Blog about C#, javascript and powershell]]></description><link>http://paulbcastillo.me</link><generator>RSS for Node</generator><lastBuildDate>Sat, 07 Jul 2018 00:19:13 GMT</lastBuildDate><item><title><![CDATA[Problem solving JavaScript's Reduce function - just one of many use cases to utilize Reduce]]></title><description><![CDATA[Problem: Use one array and  .reduce() function . Rules:  Data Solution How did I arrive at this solution?! I will elaborate below. So I used…]]></description><link>http://paulbcastillo.me/Problem-solving-JavaScripts-Reduce-function/</link><guid isPermaLink="false">http://paulbcastillo.me/Problem-solving-JavaScripts-Reduce-function/</guid><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Domain of Azrael]]></title><description><![CDATA[Blog about C#, javascript and powershell]]></description><link>http://paulbcastillo.me</link><generator>RSS for Node</generator><lastBuildDate>Sat, 07 Jul 2018 01:15:59 GMT</lastBuildDate><item><title><![CDATA[Problem solving JavaScript's Reduce function - just one of many use cases to utilize Reduce]]></title><description><![CDATA[Problem: Use one array and  .reduce() function . Rules:  Data Solution How did I arrive at this solution?! I will elaborate below. So I used…]]></description><link>http://paulbcastillo.me/Problem-solving-JavaScripts-Reduce-function/</link><guid isPermaLink="false">http://paulbcastillo.me/Problem-solving-JavaScripts-Reduce-function/</guid><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/abstract-art-artistic-1020315-87727d5e4b6e36480d453f4956a55677-9acb9.jpg&quot;
@@ -1363,16 +1363,16 @@ look at 1 text file filled with windows path locations and 1 text file that has 
 This is used for formatting the size of files found in the script.&lt;/p&gt;
 &lt;p&gt;Format-FileSize function takes one integer that is the Length property of a file and formats it according to its size. i.e. 1KB, 1MB…&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;powershell&quot;&gt;
-      &lt;pre class=&quot;language-powershell&quot;&gt;&lt;code class=&quot;language-powershell&quot;&gt;    &lt;span class=&quot;token keyword&quot;&gt;Function&lt;/span&gt; Format&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;FileSize&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;token keyword&quot;&gt;Param&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token namespace&quot;&gt;[int]&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$size&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-        &lt;span class=&quot;token keyword&quot;&gt;If&lt;/span&gt;     &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$size&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-gt&lt;/span&gt; 1TB&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token namespace&quot;&gt;[string]&lt;/span&gt;::Format&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;{0:0.00} TB&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$size&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt; 1TB&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-        &lt;span class=&quot;token keyword&quot;&gt;ElseIf&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$size&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-gt&lt;/span&gt; 1GB&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token namespace&quot;&gt;[string]&lt;/span&gt;::Format&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;{0:0.00} GB&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$size&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt; 1GB&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-        &lt;span class=&quot;token keyword&quot;&gt;ElseIf&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$size&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-gt&lt;/span&gt; 1MB&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token namespace&quot;&gt;[string]&lt;/span&gt;::Format&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;{0:0.00} MB&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$size&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt; 1MB&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-        &lt;span class=&quot;token keyword&quot;&gt;ElseIf&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$size&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-gt&lt;/span&gt; 1KB&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token namespace&quot;&gt;[string]&lt;/span&gt;::Format&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;{0:0.00} kB&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$size&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt; 1KB&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-        &lt;span class=&quot;token keyword&quot;&gt;ElseIf&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$size&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-gt&lt;/span&gt; 0&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;   &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token namespace&quot;&gt;[string]&lt;/span&gt;::Format&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;{0:0.00} B&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$size&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-        &lt;span class=&quot;token keyword&quot;&gt;ElseIf&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$size&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-eq&lt;/span&gt; 0&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;   &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;0 MB&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-        &lt;span class=&quot;token keyword&quot;&gt;Else&lt;/span&gt;                   &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+      &lt;pre class=&quot;language-powershell&quot;&gt;&lt;code class=&quot;language-powershell&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;Function&lt;/span&gt; Format&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;FileSize&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;Param&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token namespace&quot;&gt;[int]&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$size&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;If&lt;/span&gt;     &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$size&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-gt&lt;/span&gt; 1TB&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token namespace&quot;&gt;[string]&lt;/span&gt;::Format&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;{0:0.00} TB&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$size&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt; 1TB&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;ElseIf&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$size&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-gt&lt;/span&gt; 1GB&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token namespace&quot;&gt;[string]&lt;/span&gt;::Format&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;{0:0.00} GB&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$size&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt; 1GB&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;ElseIf&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$size&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-gt&lt;/span&gt; 1MB&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token namespace&quot;&gt;[string]&lt;/span&gt;::Format&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;{0:0.00} MB&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$size&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt; 1MB&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;ElseIf&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$size&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-gt&lt;/span&gt; 1KB&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token namespace&quot;&gt;[string]&lt;/span&gt;::Format&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;{0:0.00} kB&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$size&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt; 1KB&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;ElseIf&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$size&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-gt&lt;/span&gt; 0&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;   &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token namespace&quot;&gt;[string]&lt;/span&gt;::Format&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;{0:0.00} B&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$size&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;ElseIf&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$size&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-eq&lt;/span&gt; 0&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;   &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;0 MB&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;Else&lt;/span&gt;                   &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;h2&gt;Header of the script menu&lt;/h2&gt;
 &lt;p&gt;This is the opening screen for the script which shows the Powershell Version from the start and then I do a Read-Host to show this header for the script.&lt;/p&gt;
@@ -1444,7 +1444,7 @@ cd &lt;span class=&quot;token variable&quot;&gt;$path&lt;/span&gt;
 &lt;p&gt;The function is used when creating a new object for &lt;a href=&quot;http://ss64.com/ps/select-object.html&quot;&gt;Select-Object&lt;/a&gt; and the name of it is Size. The expression is going to be the function Format-FileSize and
 we will pass it the Length property which is the number of bytes for the file.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;powershell&quot;&gt;
-      &lt;pre class=&quot;language-powershell&quot;&gt;&lt;code class=&quot;language-powershell&quot;&gt;    @&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;Name=&lt;span class=&quot;token string&quot;&gt;&quot;Size&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;Expression=&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;Format&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;FileSize&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$_&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;Length&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+      &lt;pre class=&quot;language-powershell&quot;&gt;&lt;code class=&quot;language-powershell&quot;&gt;@&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;Name=&lt;span class=&quot;token string&quot;&gt;&quot;Size&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;Expression=&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;Format&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;FileSize&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$_&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;Length&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;h2&gt;The major part of the script&lt;/h2&gt;
 &lt;p&gt;I perform 2 &lt;a href=&quot;http://ss64.com/ps/foreach.html&quot;&gt;foreach&lt;/a&gt; loops starting with the locations text file and start with the first location then I start the next &lt;a href=&quot;http://ss64.com/ps/foreach.html&quot;&gt;foreach&lt;/a&gt;
@@ -1496,41 +1496,48 @@ I filter all the files out by using $_.PSIsContainer -eq $false. * If we wanted 
 &lt;p&gt;At the end of the script I clear the two variables: file and resultsFile. Then I open the Results.txt file for review.&lt;/p&gt;
 &lt;p&gt;Here are results for 2 locations with 2 search patterns: &lt;em&gt;excerpte&lt;/em&gt;.jpg and *.aspx&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;so all aspx files and jpg files with excerpte in the title.&lt;/p&gt;
+&lt;li&gt;so all aspx files and jpg files with excerpte in the title.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;powershell&quot;&gt;
       &lt;pre class=&quot;language-powershell&quot;&gt;&lt;code class=&quot;language-powershell&quot;&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;
 Searching folder: C:\Temp
 &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;
 =========== Searching &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;excerpte&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;jpg ===========
-&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;Number of Files found: 1&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Folder  FileName                             Size    Last Modified Date   Owner              &lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;C:\Temp DoD Pest Management DPHSexcerpte.jpg 5.86 MB 8/26/2016 4:40:11 PM Owner&lt;/p&gt;
-&lt;p&gt;=========== Searching for *.aspx ===========
-**Number of Files found: 2&lt;/p&gt;
-&lt;p&gt;Folder                          FileName    Size    Last Modified Date    Owner              &lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;C:\Temp\Test                    Logoff.aspx 4.62 kB 11/1/2016 12:06:41 PM Owner
-C:\Temp\Test Template App\admin Logoff.aspx 4.62 kB 11/1/2016 12:06:41 PM Owner&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;Searching folder: C:\Test&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;=========== Searching for &lt;em&gt;excerpte&lt;/em&gt;.jpg ===========
-**Number of Files found: 4&lt;/p&gt;
-&lt;p&gt;Folder                       FileName             Size Last Modified Date     Owner              &lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;C:\Test                      excerpte1.jpg        0 MB 12/16/2016 11:40:06 AM Owner
-C:\Test                      excerpteTENS.jpg     0 MB 12/16/2016 11:47:11 AM Owner
-C:\Test\level1\Level2\Level3 excerpte12.jpg       0 MB 12/16/2016 11:40:06 AM Owner
-C:\Test\level1\Level2\Level3 excerpteThirteen.jpg 0 MB 12/16/2016 11:47:11 AM Owner&lt;/p&gt;
-&lt;p&gt;=========== Searching for *.aspx ===========
-**Number of Files found: 0&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
-      &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;Number of Files found: 1
+
+
+Folder  FileName                             Size    Last Modified Date   Owner              
+&lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;-&lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;  &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;-&lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;-&lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;                             &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;-&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;    &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;-&lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;-&lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;-&lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;-&lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;-&lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;   &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;-&lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;              
+C:\Temp DoD Pest Management DPHSexcerpte&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;jpg 5&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;86 MB 8&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;26&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;2016 4:40:11 PM Owner
+
+
+=========== Searching &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;aspx ===========
+&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;Number of Files found: 2
+
+
+Folder                          FileName    Size    Last Modified Date    Owner              
+&lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;-&lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;                          &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;-&lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;-&lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;    &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;-&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;    &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;-&lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;-&lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;-&lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;-&lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;-&lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;    &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;-&lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;              
+C:\Temp\Test                    Logoff&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;aspx 4&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;62 kB 11&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;1&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;2016 12:06:41 PM Owner
+C:\Temp\Test Template App\admin Logoff&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;aspx 4&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;62 kB 11&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;1&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;2016 12:06:41 PM Owner
+
+
+&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;
+Searching folder: C:\Test
+&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;
+=========== Searching &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;excerpte&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;jpg ===========
+&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;Number of Files found: 4
+
+
+Folder                       FileName             Size Last Modified Date     Owner              
+&lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;-&lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;                       &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;-&lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;-&lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;             &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;-&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;-&lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;-&lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;-&lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;-&lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;-&lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;     &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;-&lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;              
+C:\Test                      excerpte1&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;jpg        0 MB 12&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;16&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;2016 11:40:06 AM Owner
+C:\Test                      excerpteTENS&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;jpg     0 MB 12&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;16&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;2016 11:47:11 AM Owner
+C:\Test\level1\Level2\Level3 excerpte12&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;jpg       0 MB 12&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;16&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;2016 11:40:06 AM Owner
+C:\Test\level1\Level2\Level3 excerpteThirteen&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;jpg 0 MB 12&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;16&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;2016 11:47:11 AM Owner
+
+
+=========== Searching &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;aspx ===========
+&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;Number of Files found: 0&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;</content:encoded></item><item><title><![CDATA[Beginner's guide to PowerShell part 2 - Functions]]></title><description><![CDATA[Functions If you find that you are running a certain script all the time then the best thing to do is to create it as a function. But there…]]></description><link>http://paulbcastillo.me/get-started-with-Powershell-part2/</link><guid isPermaLink="false">http://paulbcastillo.me/get-started-with-Powershell-part2/</guid><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -1576,9 +1583,9 @@ When you create a function, the name you have for the function is now a command 
 You can create just regular code here or you can create functions.&lt;/p&gt;
 &lt;p&gt;Here is an example of a function that opens up a text file using notepad and the location of the text file is located in C:\Test folder.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;powershell&quot;&gt;
-      &lt;pre class=&quot;language-powershell&quot;&gt;&lt;code class=&quot;language-powershell&quot;&gt;    &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; Notes &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-        notepad &lt;span class=&quot;token string&quot;&gt;&quot;C:\Test\notes.txt&quot;&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+      &lt;pre class=&quot;language-powershell&quot;&gt;&lt;code class=&quot;language-powershell&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; Notes &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    notepad &lt;span class=&quot;token string&quot;&gt;&quot;C:\Test\notes.txt&quot;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;When you click the play button on the top your function executes inside the code window. Once its ran then it’s loaded in PowerShell for use again with just using the name of the function which is Notes.
 &lt;a href=&quot;/PowershellIDE_NotesFunction-min.png&quot; target=&quot;_blank&quot;&gt;
@@ -1666,7 +1673,6 @@ You can create just regular code here or you can create functions.&lt;/p&gt;
     &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 
     &lt;span class=&quot;token variable&quot;&gt;$firstNumber&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$secondNumber&lt;/span&gt;
-
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 
 Sum &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;firstNumber 1 &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;secondNumber 2
@@ -1678,20 +1684,20 @@ Sum 1 2
 &lt;p&gt;The syntax of a function is important to learn to do correctly. When declaring parameters it is crucial that you put the $ dollar sign in front of every parameter. Also you can optionally declare the type of variable and in this case I have declared both the parameters as integers.&lt;/p&gt;
 &lt;p&gt;Here is the exact same function but without declaring the type for the parameters and it achieves the same result.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;powershell&quot;&gt;
-      &lt;pre class=&quot;language-powershell&quot;&gt;&lt;code class=&quot;language-powershell&quot;&gt;    &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; SumWO &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;token keyword&quot;&gt;param&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
-            &lt;span class=&quot;token variable&quot;&gt;$first&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-            &lt;span class=&quot;token variable&quot;&gt;$second&lt;/span&gt;
-        &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      &lt;pre class=&quot;language-powershell&quot;&gt;&lt;code class=&quot;language-powershell&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; SumWO &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;param&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+        &lt;span class=&quot;token variable&quot;&gt;$first&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token variable&quot;&gt;$second&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 
-        &lt;span class=&quot;token variable&quot;&gt;$first&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$second&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token variable&quot;&gt;$first&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$second&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 
-    SumWO &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;firstNumber 1 &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;secondNumber 2
-    3
+SumWO &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;firstNumber 1 &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;secondNumber 2
+3
 
-    SumWO 1 2
-    3&lt;/code&gt;&lt;/pre&gt;
+SumWO 1 2
+3&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;The other part is you can use &lt;a href=&quot;http://ss64.com/ps/syntax-tab-completion.html&quot; target=&quot;_blank&quot;&gt;Tab Completion&lt;/a&gt; in PowerShell.&lt;/p&gt;
 &lt;p&gt;When I type sum(lowercase) I hit Tab right after and it finds my function and changes it to Sum. After that I hit spacebar then a dash. I hit Tab again and PowerShell shows me the first parameter. Then I hit spacebar again and type in the number 1. I type another dash then Tab and it gives me the second parameter, I hit spacebar again and then type 2. After all that I hit Enter and the function executes with the parameters and returns a 3 on the next line. I then type cls to clear the screen. The command &lt;a href=&quot;http://ss64.com/nt/cls.html&quot; target=&quot;_blank&quot;&gt;cls&lt;/a&gt; is an alias for &lt;a href=&quot;http://ss64.com/ps/clear-host.html&quot;&gt;Clear-Host&lt;/a&gt; command in PowerShell.&lt;/p&gt;
@@ -1700,31 +1706,31 @@ Sum 1 2
 &lt;p&gt;Functions also have a way to set parameters with default values. So say you want to create the same function we have been using but want to set both the firstNumber and secondNumber with a default value. So if you just run Sum in powershell it won’t require you to put in a variable.&lt;/p&gt;
 &lt;p&gt;Currently if you run the function with no parameters then the value automatically comes back as 0.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;powershell&quot;&gt;
-      &lt;pre class=&quot;language-powershell&quot;&gt;&lt;code class=&quot;language-powershell&quot;&gt;    &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; Sum &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;token keyword&quot;&gt;param&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
-            &lt;span class=&quot;token variable&quot;&gt;$first&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-            &lt;span class=&quot;token variable&quot;&gt;$second&lt;/span&gt;
-        &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      &lt;pre class=&quot;language-powershell&quot;&gt;&lt;code class=&quot;language-powershell&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; Sum &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;param&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+        &lt;span class=&quot;token variable&quot;&gt;$first&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token variable&quot;&gt;$second&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 
-        &lt;span class=&quot;token variable&quot;&gt;$first&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$second&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token variable&quot;&gt;$first&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$second&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 
-    Sum
-    0&lt;/code&gt;&lt;/pre&gt;
+Sum
+0&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;But if we specify default values for each parameter, in this case 2 for each value. When you run the sum command now it will be equal to 4.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;powershell&quot;&gt;
-      &lt;pre class=&quot;language-powershell&quot;&gt;&lt;code class=&quot;language-powershell&quot;&gt;    &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; Sum &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;token keyword&quot;&gt;param&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
-            &lt;span class=&quot;token variable&quot;&gt;$first&lt;/span&gt;=2&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-            &lt;span class=&quot;token variable&quot;&gt;$second&lt;/span&gt;=2
-        &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      &lt;pre class=&quot;language-powershell&quot;&gt;&lt;code class=&quot;language-powershell&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; Sum &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;param&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+        &lt;span class=&quot;token variable&quot;&gt;$first&lt;/span&gt;=2&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token variable&quot;&gt;$second&lt;/span&gt;=2
+    &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 
-        &lt;span class=&quot;token variable&quot;&gt;$first&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$second&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token variable&quot;&gt;$first&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$second&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 
-    Sum
-    4&lt;/code&gt;&lt;/pre&gt;
+Sum
+4&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;h2&gt;Functions with Required parameters&lt;/h2&gt;
 &lt;p&gt;Also to help you starting with Windows PowerShell 2.0 and above, there is a &lt;a href=&quot;http://ss64.com/ps/syntax-args.html&quot;&gt;parameter attribute&lt;/a&gt; you can use to require a parameter.&lt;/p&gt;
@@ -1863,7 +1869,7 @@ Next, if you are going to be creating scripts then you should set the security o
 &lt;h2&gt;First things first&lt;/h2&gt;
 &lt;p&gt;If you plan on creating any script files the first command you should execute inside PowerShell is this one.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;powershell&quot;&gt;
-      &lt;pre class=&quot;language-powershell&quot;&gt;&lt;code class=&quot;language-powershell&quot;&gt;    &lt;span class=&quot;token function&quot;&gt;Set&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;ExecutionPolicy &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;ExecutionPolicy Bypass &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;Scope CurrentUser&lt;/code&gt;&lt;/pre&gt;
+      &lt;pre class=&quot;language-powershell&quot;&gt;&lt;code class=&quot;language-powershell&quot;&gt;&lt;span class=&quot;token function&quot;&gt;Set&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;ExecutionPolicy &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;ExecutionPolicy Bypass &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;Scope CurrentUser&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;PowerShell also allows you to use the up arrow to get the last command executed.&lt;/p&gt;
 &lt;p&gt;By default, PowerShell doesn’t allow outright execution of ps1 files(scripts). So you must tell PowerShell that the security must allow the current user to execute scripts.
@@ -1872,28 +1878,28 @@ This is not mandatory when first learning PowerShell and it is setup so that you
 &lt;p&gt;Each PowerShell window that you open has an associated profile that is a file located in various places inside Windows.
 If you type: &lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;powershell&quot;&gt;
-      &lt;pre class=&quot;language-powershell&quot;&gt;&lt;code class=&quot;language-powershell&quot;&gt;    &lt;span class=&quot;token variable&quot;&gt;$profile&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+      &lt;pre class=&quot;language-powershell&quot;&gt;&lt;code class=&quot;language-powershell&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;$profile&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;You will see the path and name of your profile location.
 If you want you can put in this command to open your profile inside of Notepad.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;powershell&quot;&gt;
-      &lt;pre class=&quot;language-powershell&quot;&gt;&lt;code class=&quot;language-powershell&quot;&gt;    notepad &lt;span class=&quot;token variable&quot;&gt;$profile&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+      &lt;pre class=&quot;language-powershell&quot;&gt;&lt;code class=&quot;language-powershell&quot;&gt;notepad &lt;span class=&quot;token variable&quot;&gt;$profile&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;Once in your profile file you can add PowerShell code to run every time you first start it. For instance, you can use the code below to get all the paths located in your System Environment variables and save them as PSDrives. &lt;/p&gt;
 &lt;h3&gt;Profile example code&lt;/h3&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;powershell&quot;&gt;
-      &lt;pre class=&quot;language-powershell&quot;&gt;&lt;code class=&quot;language-powershell&quot;&gt;    &lt;span class=&quot;token variable&quot;&gt;$names&lt;/span&gt; = &lt;span class=&quot;token namespace&quot;&gt;[Environment+SpecialFolder]&lt;/span&gt;::GetNames&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token namespace&quot;&gt;[Environment+SpecialFolder]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      &lt;pre class=&quot;language-powershell&quot;&gt;&lt;code class=&quot;language-powershell&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;$names&lt;/span&gt; = &lt;span class=&quot;token namespace&quot;&gt;[Environment+SpecialFolder]&lt;/span&gt;::GetNames&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token namespace&quot;&gt;[Environment+SpecialFolder]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 
-    &lt;span class=&quot;token keyword&quot;&gt;foreach&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$name&lt;/span&gt; in &lt;span class=&quot;token variable&quot;&gt;$names&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$path&lt;/span&gt; = &lt;span class=&quot;token namespace&quot;&gt;[Environment]&lt;/span&gt;::GetFolderPath&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;token function&quot;&gt;New-PSDrive&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;Name &lt;span class=&quot;token variable&quot;&gt;$name&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;PSProvider FileSystem &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;Root &lt;span class=&quot;token variable&quot;&gt;$path&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;Out-Null&lt;/span&gt;
-        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;span class=&quot;token keyword&quot;&gt;foreach&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$name&lt;/span&gt; in &lt;span class=&quot;token variable&quot;&gt;$names&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$path&lt;/span&gt; = &lt;span class=&quot;token namespace&quot;&gt;[Environment]&lt;/span&gt;::GetFolderPath&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token function&quot;&gt;New-PSDrive&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;Name &lt;span class=&quot;token variable&quot;&gt;$name&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;PSProvider FileSystem &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;Root &lt;span class=&quot;token variable&quot;&gt;$path&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;Out-Null&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;This allows me to select a drive or location and navigate there quickly. Such as this one called desktop and it takes me directly to my desktop.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;powershell&quot;&gt;
-      &lt;pre class=&quot;language-powershell&quot;&gt;&lt;code class=&quot;language-powershell&quot;&gt;       cd desktop:&lt;/code&gt;&lt;/pre&gt;
+      &lt;pre class=&quot;language-powershell&quot;&gt;&lt;code class=&quot;language-powershell&quot;&gt;cd desktop:&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;h2&gt;Basic Syntax&lt;/h2&gt;
 &lt;p&gt;Wikipedia has the best interpretation/definition of PowerShell.&lt;/p&gt;
@@ -1906,7 +1912,7 @@ If you want you can put in this command to open your profile inside of Notepad.&
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th align=&quot;center&quot;&gt;Data Type Name&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;Data Type&lt;/th&gt;
 &lt;th align=&quot;center&quot;&gt;Description&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
@@ -1945,7 +1951,7 @@ HashTable
 &lt;td align=&quot;center&quot;&gt;[
 Int32
 ]
-, 
+,
 [
 Int
 ]&lt;/td&gt;
@@ -1973,7 +1979,7 @@ ScriptBlock
 &lt;td align=&quot;center&quot;&gt;[
 Single
 ]
-, 
+,
 [
 Float
 ]&lt;/td&gt;
@@ -2007,21 +2013,21 @@ XmlDocument
 &lt;/table&gt;
 &lt;p&gt;You can create a variable with a $ dollar sign or you can put the data type first then the $ dollar sign.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;powershell&quot;&gt;
-      &lt;pre class=&quot;language-powershell&quot;&gt;&lt;code class=&quot;language-powershell&quot;&gt;       &lt;span class=&quot;token variable&quot;&gt;$test&lt;/span&gt; = &lt;span class=&quot;token string&quot;&gt;&quot;testing&quot;&lt;/span&gt;
-       &lt;span class=&quot;token namespace&quot;&gt;[string]&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$teststring&lt;/span&gt; = &lt;span class=&quot;token string&quot;&gt;&quot;testing&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+      &lt;pre class=&quot;language-powershell&quot;&gt;&lt;code class=&quot;language-powershell&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;$test&lt;/span&gt; = &lt;span class=&quot;token string&quot;&gt;&quot;testing&quot;&lt;/span&gt;
+&lt;span class=&quot;token namespace&quot;&gt;[string]&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$teststring&lt;/span&gt; = &lt;span class=&quot;token string&quot;&gt;&quot;testing&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;Both variables are of type string.&lt;/p&gt;
 &lt;p&gt;You can also use it like a calculator&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;powershell&quot;&gt;
-      &lt;pre class=&quot;language-powershell&quot;&gt;&lt;code class=&quot;language-powershell&quot;&gt;       &lt;span class=&quot;token variable&quot;&gt;$count&lt;/span&gt; = 1
-       &lt;span class=&quot;token variable&quot;&gt;$count&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; 1
-       &lt;span class=&quot;token variable&quot;&gt;$count&lt;/span&gt;
-       2&lt;/code&gt;&lt;/pre&gt;
+      &lt;pre class=&quot;language-powershell&quot;&gt;&lt;code class=&quot;language-powershell&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;$count&lt;/span&gt; = 1
+&lt;span class=&quot;token variable&quot;&gt;$count&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; 1
+&lt;span class=&quot;token variable&quot;&gt;$count&lt;/span&gt;
+2&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;You also have access to .Net methods inside PowerShell.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;powershell&quot;&gt;
-      &lt;pre class=&quot;language-powershell&quot;&gt;&lt;code class=&quot;language-powershell&quot;&gt;       &lt;span class=&quot;token namespace&quot;&gt;[Math]&lt;/span&gt;::pow&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;2&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;2&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-       4&lt;/code&gt;&lt;/pre&gt;
+      &lt;pre class=&quot;language-powershell&quot;&gt;&lt;code class=&quot;language-powershell&quot;&gt;&lt;span class=&quot;token namespace&quot;&gt;[Math]&lt;/span&gt;::pow&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;2&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;2&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+4&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;This is the Math class using the method pow which takes two integers and the first one is value and the second is the power.&lt;/p&gt;
 &lt;h2&gt;PowerShell basic cmdlets to get started with&lt;/h2&gt;
@@ -2066,12 +2072,12 @@ XmlDocument
   &lt;/span&gt;
   
   &lt;/a&gt;
-    
-This is useful because now you know what commands are available to you.&lt;/li&gt;
+    &lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;This is useful because now you know what commands are available to you.&lt;/p&gt;
 &lt;p&gt;To search on a specific verb you can use this command:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;powershell&quot;&gt;
-      &lt;pre class=&quot;language-powershell&quot;&gt;&lt;code class=&quot;language-powershell&quot;&gt;       &lt;span class=&quot;token function&quot;&gt;Get-Command&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;verb get&lt;/code&gt;&lt;/pre&gt;
+      &lt;pre class=&quot;language-powershell&quot;&gt;&lt;code class=&quot;language-powershell&quot;&gt;&lt;span class=&quot;token function&quot;&gt;Get-Command&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;verb get&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;
   &lt;a
@@ -2111,11 +2117,11 @@ This is useful because now you know what commands are available to you.&lt;/li&g
 &lt;p&gt;&lt;strong&gt;Get-Help&lt;/strong&gt; - This is especially helpful to get the exact properties of a command or variable that PowerShell has available.
 To get all help then type: &lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;powershell&quot;&gt;
-      &lt;pre class=&quot;language-powershell&quot;&gt;&lt;code class=&quot;language-powershell&quot;&gt;   &lt;span class=&quot;token function&quot;&gt;Get-Help&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+      &lt;pre class=&quot;language-powershell&quot;&gt;&lt;code class=&quot;language-powershell&quot;&gt;&lt;span class=&quot;token function&quot;&gt;Get-Help&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;Or you can lookup a specific command like this gci which is an alias for &lt;a href=&quot;http://ss64.com/ps/get-childitem.html&quot;&gt;Get-ChildItem&lt;/a&gt; which is PowerShell’s version of dir in Shell or ls in Linux)&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;powershell&quot;&gt;
-      &lt;pre class=&quot;language-powershell&quot;&gt;&lt;code class=&quot;language-powershell&quot;&gt;   &lt;span class=&quot;token function&quot;&gt;Get-Help&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;gci&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+      &lt;pre class=&quot;language-powershell&quot;&gt;&lt;code class=&quot;language-powershell&quot;&gt;&lt;span class=&quot;token function&quot;&gt;Get-Help&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;gci&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;
   &lt;a
