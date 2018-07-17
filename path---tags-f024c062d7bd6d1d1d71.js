@@ -1,0 +1,2 @@
+webpackJsonp([55702396619907],{809:function(t,e){t.exports={data:{site:{siteMetadata:{title:"paul b castillo Tech Blog"}},allMarkdownRemark:{group:[{fieldValue:"excel",totalCount:1},{fieldValue:"google sheets",totalCount:1},{fieldValue:"javascript",totalCount:3},{fieldValue:"macro",totalCount:2},{fieldValue:"powershell",totalCount:4},{fieldValue:"script",totalCount:2},{fieldValue:"sheets",totalCount:1}]}},pathContext:{}}}});
+//# sourceMappingURL=path---tags-f024c062d7bd6d1d1d71.js.map

@@ -153,7 +153,7 @@ exports.modules = {
 	    var info = parts.find(function (el) {
 	      return el.node.frontmatter.title === "info";
 	    });
-	
+	    // console.log(this.props);
 	    return _react2.default.createElement(
 	      "aside",
 	      {
@@ -447,7 +447,7 @@ exports.modules = {
 	      pages = props.pages,
 	      linkOnClick = props.linkOnClick;
 	
-	
+	  console.log(props);
 	  return _react2.default.createElement(
 	    "nav",
 	    { className: classes.infoMenu },

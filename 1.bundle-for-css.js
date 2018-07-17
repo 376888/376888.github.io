@@ -152,7 +152,7 @@ webpackJsonp([1],{
 	    var info = parts.find(function (el) {
 	      return el.node.frontmatter.title === "info";
 	    });
-
+	    // console.log(this.props);
 	    return _react2.default.createElement(
 	      "aside",
 	      {
@@ -446,7 +446,7 @@ webpackJsonp([1],{
 	      pages = props.pages,
 	      linkOnClick = props.linkOnClick;
 
-
+	  console.log(props);
 	  return _react2.default.createElement(
 	    "nav",
 	    { className: classes.infoMenu },
@@ -678,7 +678,7 @@ webpackJsonp([1],{
 
 	"use strict";
 
-	var _interopRequireDefault = __webpack_require__(335);
+	var _interopRequireDefault = __webpack_require__(336);
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
